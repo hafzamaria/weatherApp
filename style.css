@@ -1,0 +1,175 @@
+body {
+
+    background-image: url(./img/globe\ \(1\).jpg);
+    border-radius: 145px 0px;
+    border: 0px solid lightgrey;
+    padding-top: 75px;
+    box-shadow: -31px -17px 132px grey;
+    margin: 50px;
+    height: 720px;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: start;
+    font-size: 80px;
+    color: cadetblue;
+    margin: -70px;
+    margin-left: 75px;
+    text-shadow: -1px 0px 5px black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+
+}
+
+input {
+    margin-top: -20px;
+    margin-bottom: 28px;
+}
+
+input,
+button {
+    height: 70px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 50px;
+}
+
+button,
+input:hover {
+    color: azure;
+    background-color: cadetblue;
+
+}
+
+.but1 {
+    height: 70px;
+    width: 164px;
+    margin-left: 450px;
+    margin-top: 20px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+#result3 {
+    font-size: 120px;
+    margin-right: 40px;
+
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-around;
+    color: azure;
+    margin: -90px;
+}
+
+.div2,
+.div3 {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+        margin-left: -46px;
+    }
+
+
+    input,
+    button {
+        margin-left: 73px;
+        font-size: 28px;
+        height: 50px;
+    }
+
+    .but1 {
+        margin-left: 170px;
+        height: 50px;
+        margin-top: 50px;
+    }
+
+    .div1 {
+        margin-top: -50px;
+    }
+
+    .div2 {
+        font-size: 20px;
+        margin-left: 85px
+    }
+
+    .div3 {
+        font-size: 20px;
+        margin-right: 50px;
+    }
+
+    #result3 {
+        font-size: 70px;
+        margin-left: 40px
+    }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        box-shadow: none;
+        width: 320px;
+        padding: 0px;
+        padding-top: 30px;
+        padding-left: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: -65px;
+        font-size: 50px;
+        margin-top: -40;
+    }
+
+    input {
+        margin-top: 1px;
+        width: 200px;
+        margin-left: -60px;
+    }
+
+    button {
+        width: 300px;
+        margin-left: -100px;
+        margin-top: -20px;
+    }
+
+    .but1 {
+        margin-left: -25px;
+        margin-top: 25px;
+    }
+
+    .div1 {
+        margin-top: -45px;
+        text-align: center;
+        display: block;
+    }
+
+    #result3 {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: -171px;
+        margin-bottom: 110px;
+        margin-left: 163px;
+    }
+
+
+    .div2 {
+        margin-top: 47px;
+        margin-left: -19px
+    }
+
+    .div3 {
+        margin-top: -15px;
+    }
+}
