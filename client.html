@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+
+    <form onsubmit="getWeather(); return false">
+        <div class="main">
+            <label for="cityName"></label>
+            <input required type="text" name="" id="cityName">
+            <br>
+
+            <button type="submit">Get Weather Data</button>
+            <button class="but1" type="reset" value="reset">reset</button>
+        </div>
+    </form>
+    <div id="result"></div>
+    <div id="result1"></div>
+
+    
+    <script>
+        function getWeather(){
+            let cityName =document.querySelector("#cityName").value;
+
+            axios.get(`http://localhost:4000/weather`)
+            .then(function(response){
+
+                let data = response.data;
+                console.log(data);
+                document.querySelector("#result").innerHTML=`City:${data.city}`;
+                document.querySelector("#result1").innerHTML =`Condition:${data.condition}`;
+
+            })
+            .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+        }
+    </script>
+    
+</body>
+</html>

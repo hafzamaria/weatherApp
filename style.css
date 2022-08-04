@@ -57,7 +57,8 @@ input:hover {
 }
 
 #result3 {
-    font-size: 120px;
+    /* font-size: 120px; */
+    font-size: 70px;
     margin-right: 40px;
 
 }
@@ -72,6 +73,14 @@ input:hover {
 .div2,
 .div3 {
     font-size: 30px;
+}
+#result7{
+    margin-right: -200px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,33 +143,38 @@ input:hover {
 
     input {
         margin-top: 1px;
-        width: 200px;
-        margin-left: -60px;
+        width: 250px;
+        margin-left: -12px;
     }
 
-    button {
+    /* button {
         width: 300px;
-        margin-left: -100px;
+        margin-left: -40px;
         margin-top: -20px;
-    }
+    } */
 
     .but1 {
         margin-left: -25px;
         margin-top: 25px;
+        width: 100px;
     }
 
     .div1 {
         margin-top: -45px;
         text-align: center;
         display: block;
+        text-align: center;
+        margin-left: 40px;
+        flex-direction: column-reverse;
     }
 
     #result3 {
         display: flex;
-        justify-content: flex-start;
-        margin-top: -171px;
-        margin-bottom: 110px;
-        margin-left: 163px;
+        flex-direction: column-reverse;
+        /* margin-top: -171px; */
+        /* margin-bottom: 110px; */
+        /* margin-left: 163px; */
+       
     }
 
 
@@ -172,4 +186,5 @@ input:hover {
     .div3 {
         margin-top: -15px;
     }
+    
 }
